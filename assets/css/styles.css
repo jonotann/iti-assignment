@@ -1,0 +1,288 @@
+/* GLOBALS */
+
+* {
+    font-family: Helvetica;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 24px;
+    gap: 24px;
+}
+
+h2 {
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 4px 0;
+}
+
+a {
+    color: #f77f00;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid rgba(0,0,0, 0.1);
+    padding: 12px;
+    border-radius: 12px;
+    transition: all .255s ease-in-out;
+}
+
+a:hover {
+    transform: scale(1.05);
+    background-color: rgba(0,0,0, 0.05);
+}
+
+a:active {
+    transform: scale(.98);
+    background-color: rgba(0,0,0, 0.02);
+}
+
+/* HEADING CONTAINER */
+
+#header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+}
+
+#SelectContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+#SelectContainer h4 {
+    font-weight: 300;
+    color: rgba(0,0,0, 0.8);
+    text-transform: uppercase;
+}
+
+/* FEATURED SECTION */
+
+#FeaturedRepContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: stretch;
+}
+
+#FeaturedRepContainer .FeaturedRep {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0,0,0, 0.1);
+    border-radius: 16px;
+    gap: 12px;
+    padding: 12px;
+}
+
+.FeaturedRep .Profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+}
+
+.FeaturedRep .RepActions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.FeaturedRep .ProfileImage {
+    display: flex;
+    flex-direction: column;
+}
+
+.FeaturedRep .ProfileContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ProfileContent h1 {
+    color: #f77f00;
+    font-weight: 600;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.ProfileContent p {
+    color: rgba(0,0,0, 0.5);
+    text-transform: uppercase;
+    font-weight: 300;
+    border-radius: 100px;
+    padding: 8px;
+}
+
+.FeaturedRep img {
+    border-radius: 200px;
+}
+
+/* SALES TEAM SECTION */
+
+#SalesTeamContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+#SalesTeamContainer .TeamMember {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    border: 1px solid rgba(0,0,0, 0.1);
+    border-radius: 16px;
+}
+
+#SalesTeamContainer .TeamMember img {
+    border-radius: 200px;
+    width: 80px;
+}
+
+#SalesTeamContainer .TeamMember #InnerDeals {
+    color:#f77f00;
+}
+
+#SalesTeamContainer .TeamMember #InnerActions {
+    border-radius: 200px;
+    width: 80px;
+    display: flex;
+    gap: 8px;
+}
+
+#SalesTeamContainer .TeamMember .TableCol {
+    flex: 1;
+}
+
+/* NOTIFICATIONS / FEED */
+
+.Feed {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+#FeedContainer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.Notification {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid rgba(0,0,0, 0.1);
+    border-radius: 16px;
+    gap: 12px;
+}
+
+.Notification img {
+    border-radius: 100px;
+    width: 80px;
+}
+
+/* OVERVIEW */
+
+#OverviewContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 12px;
+    border: 1px solid rgba(0,0,0, 0.1);
+    border-radius: 16px;
+    padding: 12px;
+    flex: 1;
+}
+
+#OverviewContainer .Analytics { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 12px;
+    gap: 12px;
+}
+
+#OverviewContainer h3 { 
+    font-size: 38px;
+    font-weight: 600;
+    color:#f77f00;
+}
+
+#OverviewContainer p { 
+    font-weight: 300;
+    color: rgba(0,0,0, 0.4);
+    text-transform: uppercase;
+}
+
+#OverviewContainer hr {
+    opacity: .4;
+}
+
+/* COMBO CONTAINER */
+
+#Combo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 12px 0;
+    gap: 12px;
+}
+
+.ComboColumn {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+.Overview {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+}
+
+@media (max-width: 800px) {
+    #SalesTeamContainer .TeamMember #InnerActions {
+        flex-direction: column;
+    }
+
+    .FeaturedRep .RepActions {
+        flex-direction: column;
+    }
+}
